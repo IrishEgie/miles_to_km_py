@@ -10,7 +10,6 @@ window.eval('tk::PlaceWindow . center')
 def button_click():
     # Check if the input is a valid number
     user_input = in_field.get()
-    
     try:
         miles = float(user_input)  # Convert to float for flexibility (in case of decimal values)
         km = miles * 1.60934  # Convert miles to kilometers
@@ -31,6 +30,7 @@ button = tk.Button(text="Calculate",command=button_click, padx=5, pady=5,font=FO
 in_field = tk.Entry()
 in_field.config(width=25)
 
+#Grid widget placements 
 in_field.grid(column=1, row=0)
 unit_miles.grid(column=2, row=0)
 label.grid(column=0, row=1)
